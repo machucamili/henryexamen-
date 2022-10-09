@@ -11,7 +11,13 @@ function crearClaseMascota() {
       // ej:
       //[{actividad: 'salir a caminar', frecuencia: '1 vez al dia'}, {actividad: 'baño', frecuencia: '1 vez al mes'}]
       // Inicializar las propiedades de la mascota con los valores recibidos como argumento
-      // Tu código aca:
+      // Tu código aca: {
+      constructor(nombre, dueño, actividades) {
+        this.nombre = nombre;
+        this.dueño = dueño;
+        this.actividades = actividades;
+      
+      }
   
     
     }
@@ -20,11 +26,17 @@ function crearClaseMascota() {
       // este método debe retornar el nombre de la mascota.
       // Tu código aca:
 
+      {
+        return this.nombre
+      }
     }
 
     getDueño() {
       // El método debe retornar nombre y apellido del dueño (concatenados).
       // Tu código aca:
+      {
+        return (this.dueño.nombre + this.dueño.apellido)
+      }
     
     }
 
@@ -41,6 +53,12 @@ function crearClaseMascota() {
       // [{actividad: 'salir a caminar', frecuencia: '1 vez al dia'}, {actividad: 'baño', frecuencia: '1 vez al mes'}]
       // mascotas.getActividades() debería devolver ['salir a caminar, 'baño']
       // Tu código aca:
+       {
+        this.actividades += {
+            "actividad": actividad,
+            "frecuencia": frecuencia
+        }
+      }
      
     }
 
@@ -50,6 +68,12 @@ function crearClaseMascota() {
       // [{actividad: 'salir a caminar', frecuencia: '1 vez al dia'}, {actividad: 'baño', frecuencia: '1 vez al mes'}]
       // mascotas.getFrecuencia('baño') debería devolver '1 vez al mes'
       // Tu código aca:
+ {
+        let element = this.actividades.find((elemento) => {elemento == string})
+        return element.frecuencia
+      }
+    }
+}
       
     }
   }
