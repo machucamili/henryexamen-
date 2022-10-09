@@ -12,6 +12,16 @@ function fakeBinary2(string) {
   // fakeBinary2('5627') devuelve "1101"
   // fakeBinary("729") devuelve "101"
   // Tu código aca:
+{
+    let newString = ""
+    for (let idx = 0; idx < string.length; idx++) {
+        if (string[idx] == "5") {
+            newString += "0" 
+        } else {
+            newString += "1"
+        }
+    }
+    return newString
 
 }
 
