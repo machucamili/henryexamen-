@@ -10,6 +10,10 @@ function doble(array) {
   //doble([1, 2, 3]) devuelve [2, 4, 6]
   // Tu código aca:
 
+{
+    let map = array.map(x => x * 2);
+    return map
+}
 }
 
 // No modifiques nada debajo de esta linea //
