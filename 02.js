@@ -25,9 +25,17 @@ function cuantosMenores(invitados) {
   // };
   // cuantosMenores(invitados) devuelve 2
   // Tu código aca:
-   let menores = invitados.find((invitado) => invitado.edad < 18)
-  
-  return(menores.length)
+   {
+    let menores = 0
+    for (const element in invitados) {
+        if (Object.hasOwnProperty.call(invitados, element)) {
+            const cosa = invitados[element];
+            if (cosa.edad < 18) {
+                menores++
+            }
+        }
+    }
+    return menores
 }
 
 
